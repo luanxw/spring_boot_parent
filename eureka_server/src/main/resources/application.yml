@@ -3,6 +3,8 @@ server:
 eureka:
   instance:
     hostname: localhost
+  server:
+    enable-self-preservation: false #关闭自我保护机制
   client:
     register-with-eureka: false
     fetch-registry: false
